@@ -11,6 +11,14 @@ import {AuthGuard} from "./services/auth-guard";
 import {AuthService} from "./services/auth-service";
 import { PostComponent } from './post/post.component';
 import { CommentComponent } from './comment/comment.component';
+import { NewUserComponent } from './new-user/new-user.component';
+import { UserListComponent } from './user-list/user-list.component';
+import { PostListComponent } from './post-list/post-list.component';
+import { AddPostComponent } from './add-post/add-post.component';
+
+import { AddCommentComponent } from './add-comment/add-comment.component';
+import { CommentListComponent } from './comment-list/comment-list.component';
+import { LoggingUserComponent } from './logging-user/logging-user.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +26,13 @@ import { CommentComponent } from './comment/comment.component';
     UserComponent,
     PostComponent,
     CommentComponent,
+    NewUserComponent,
+    UserListComponent,
+    PostListComponent,
+    AddPostComponent,
+    AddCommentComponent,
+    CommentListComponent,
+    LoggingUserComponent,
     
   ],
   imports: [
