@@ -1,3 +1,22 @@
+<body class="d-flex h-100 text-center">
 
+<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+    <header class="mb-auto">
+      <div>
+        <h3 class="float-md-start" style="color:#ffffff">PostIT</h3>
+        <nav class="nav nav-masthead justify-content-center float-md-end">
+          <a class="nav-link fw-bold py-1 px-0" [routerLink]="['post_list']">Wall</a>
+          <a class="nav-link fw-bold py-1 px-0" [routerLink]="['add_post']">Add post</a>
+          <a class="nav-link fw-bold py-1 px-0" [routerLink]="['sign_in']">Sign in</a>
+          <a class="nav-link fw-bold py-1 px-0" [routerLink]="['new_user']">Sign up</a>
+        </nav>
+      </div>
+    </header>
+    
+    <router-outlet></router-outlet>
+  
+    <footer class="mt-auto" style="color:#ffffff">
+      <p>PostIT by Małgorzata Rywalska</footer>
+</div>
+</body>
 
-<router-outlet></router-outlet>

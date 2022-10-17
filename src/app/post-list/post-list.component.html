@@ -1,1 +1,20 @@
-<p>post-list works!</p>
+<main class="container ">
+<div class="row mb-2  item-row" *ngFor="let post of posts">
+    <div>
+      <div style="background-color: #ffffff;" class=" g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static ">
+
+          <h3 class="mb-0">{{post.accountName}}</h3>
+          <div class="mb-1 text-muted">{{post.creationDate}}</div>
+          <div class="mb-1 text-muted">{{post.statusPost}}</div>
+          <p class="text-muted mb-auto">{{post.text}}</p>
+          <a class="stretched-link text-muted">Comments: {{post.numberOfComments}}</a>
+
+        </div>
+        <div class="col-auto d-none d-lg-block">
+          
+        </div>
+      </div>
+    </div>
+</div>
+</main>

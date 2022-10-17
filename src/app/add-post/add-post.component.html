@@ -1,1 +1,19 @@
-<p>add-post works!</p>
+<div>
+  <div class="text-center form-singin singIUsize ">
+    <h1 class="h3 mb-3 fw-normal text-center textWhite">Write here.... </h1>
+
+    <div class="form-floating">
+      <input type="text" [(ngModel)]="postCreateDTO.text" class="form-control" id="floatingPassword" placeholder="Post content">
+      <label for="floatingInput">Post</label>
+    </div>
+
+    <div style="margin-top: 20px;">
+        <button class="btn btn-outline-secondary mb-3 " (click)="addPost()">ADD</button>
+        <div *ngIf="notification!=null" class="alert alert-dark " role="alert">
+        {{notification}}
+        </div>
+    </div>
+  </div>
+  <div class="product-device shadow-sm d-none d-md-block"></div>
+  <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
+</div>

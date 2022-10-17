@@ -28,7 +28,7 @@ export class AddCommentComponent implements OnInit {
   }
 
   addPost(): void{
-    this.http.put('http://localhost:9001/post', this.commentCreateDTO).subscribe((data) => {
+    this.http.put('http://localhost:9000/post', this.commentCreateDTO).subscribe((data) => {
       this.clearForm();
 
       this.notification = 'Post has been posted!';

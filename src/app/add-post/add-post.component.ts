@@ -30,7 +30,7 @@ export class AddPostComponent implements OnInit {
 
   addPost(): void{
 
-    this.http.put('http://localhost:9001/post', this.postCreateDTO).subscribe((data) => {
+    this.http.put('http://localhost:9000/post', this.postCreateDTO).subscribe((data) => {
       this.clearForm();
 
       this.notification = 'Post has been posted!';

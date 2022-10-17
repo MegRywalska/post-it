@@ -1,1 +1,19 @@
-<p>logging-user works!</p>
+<div class="text-center form-singin singIUsize ">
+    <h1 class="h3 mb-3 fw-normal text-center textWhite">Sign in</h1>
+
+    <div class="form-floating">
+      <input type="text" [(ngModel)]="authenticationDTO.username" class="form-control" id="floatingInput" placeholder="name@example.com">
+      <label for="floatingInput">Email address</label>
+    </div>
+    <div class="form-floating">
+      <input type="password" [(ngModel)]="authenticationDTO.password" class="form-control" id="floatingPassword" placeholder="Password">
+      <label for="floatingPassword">Password</label>
+    </div>
+
+    <div class="checkbox mb-3 textWhite">
+      <label>
+        <input type="checkbox" value="remember-me "> Remember me
+      </label>
+    </div>
+    <button class="btn btn-outline-secondary mb-3" (click)="login()"> Sign in</button>
+</div>

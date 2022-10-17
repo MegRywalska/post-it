@@ -6,6 +6,7 @@ export type PostDTOModel = {
   text: string;
   creationDate: string;
   statusPost: string;
+  numberOfComments: number;
   accountName: string;
 }
 
@@ -27,7 +28,7 @@ export class PostListComponent implements OnInit {
   }
 
   private refreshPostsList() {
-    this.http.get('http://localhost:9001/post').subscribe((data) => {
+    this.http.get('http://localhost:9000/post').subscribe((data) => {
       let ListOfPosts = data as PostDTOModel[];
 
       this.posts = ListOfPosts;

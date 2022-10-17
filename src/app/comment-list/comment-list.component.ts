@@ -27,7 +27,7 @@ export class CommentListComponent implements OnInit {
   }
 
   private refreshCommentsList(){
-    this.http.get('http://localhost:9001/post').subscribe((data) => {
+    this.http.get('http://localhost:9000/post').subscribe((data) => {
       let ListOfComments = data as CommentDTO[];
 
       this.comments = ListOfComments;

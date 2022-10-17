@@ -27,7 +27,7 @@ export class UserListComponent implements OnInit {
   }
 
   private refreshUsersList() {
-    this.http.get('http://localhost:9001/user').subscribe((data) => {
+    this.http.get('http://localhost:9000/user').subscribe((data) => {
       let ListOfUsers = data as UserDTOModel[];
 
       this.usersList = ListOfUsers;

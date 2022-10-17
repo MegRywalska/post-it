@@ -32,7 +32,7 @@ export class NewUserComponent implements OnInit {
   }
 
   registerUser(): void{
-    this.http.put('http://localhost:9001/user/', this.userDTO).subscribe((data) => {
+    this.http.put('http://localhost:9000/user/', this.userDTO).subscribe((data) => {
       this.clearForm();
 
       this.notification = 'Account has been registered!';

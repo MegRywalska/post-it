@@ -17,7 +17,7 @@
  */
 
 body {
-  background: linear-gradient(to right, #a8c0ff, #3f2b96); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-color: RGBA(33,37,41,var(--bs-bg-opacity,1)) !important;
   text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
   box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
 }
@@ -88,4 +88,10 @@ body {
   white-space: nowrap;
   -webkit-overflow-scrolling: touch;
 }
+
+.textWhite{
+  color: #ffffff;
+}
+
+
 
